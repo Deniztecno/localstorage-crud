@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localstorage CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD - LOCALSTORAGE</h1>
+        <form id="form">
+            <input type="text" autocomplete="off" placeholder="Add New User.." id="name">
+            <button class="success">
+                <i class="fas fa-plus"></i>
+            </button>
+        </form>
+        <div class="user" id="nameList"></div>
+    </div>
+    <script src="script.js"></script>
+
+
+    <!-- <script>
+        const userList = ["deniz", "aylin"];
+        localStorage.setItem("name", JSON.stringify(userList));// veri ekleme (oluşturma)
+        localStorage.setItem("users", JSON.stringify(userList));
+        const getStorage = JSON.parse(localStorage.getItem("name")); // veri çekme
+        localStorage.removeItem("name"); // keyi alarak verileri siler
+
+        //userList.splice(1,1); // userlistte ki 1. indexdeki eleman silindi
+        localStorage.setItem("users", JSON.stringify(userList)); // tekrardan set edildi (guncellendi)
+
+        const nameList = document.querySelector("#nameList");
+        nameList.innerHTML = getStorage;
+    </script> -->
+</body>
+</html>
